@@ -1,0 +1,51 @@
+$challenge_content_columns: 7;
+
+.challenge-wrapper {
+  @include outer-container;
+  h2 {
+    text-align: center;
+    font-size: $base-font-size * 2;
+    font-weight: lighter;
+  }
+}
+
+.challenge-summary-card {
+  background-color: $base-background-color;
+  margin-bottom: $base-line-height * 1em;
+
+  @include span-columns(12);
+
+  .challenge-thumbnail {
+    @include span-columns(3);
+    img {
+      // @include fill-parent();
+    }
+  }
+
+  .challenge-content {
+    @include span-columns($challenge_content_columns);
+
+    h3 {
+      font-size: $base-font-size * 1.5;
+      font-weight: lighter;
+    }
+
+    h4 {
+      color: $cartoon-green;
+      font-size: $base-font-size;
+      font-weight: lighter;
+    }
+
+    .info-bit {
+      @include span-columns($challenge_content_columns / 2);
+
+      h4 { font-weight: lighter; }
+      h5 { font-weight: bolder; }
+
+    }
+  }
+
+  .challenge-decorators {
+    @include span-columns(2);
+  }
+}

@@ -9,7 +9,7 @@
 
   @include display(flex);
   @include flex-wrap(wrap);
-  margin-bottom: $base-line-height;
+  margin-bottom: $base-line-height * 3em;
   overflow: auto;
   padding: 5em;
   text-align: center;
