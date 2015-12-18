@@ -1,51 +1,81 @@
-$challenge_content_columns: 7;
+$challenge_thumbnail_columns: 3;
+$challenge_content_columns: 6.5;
+$challenge_decorator_columns: 2.5;
 
 .challenge-wrapper {
   @include outer-container;
+  margin-bottom: 4em;
+  
   h2 {
     text-align: center;
     font-size: $base-font-size * 2;
-    font-weight: lighter;
+    font-weight: 200;
+  }
+
+  a {
+    display: block;
+    text-align: center;
+    font-size: $base-font-size * 1.2;
+    text-transform: uppercase;
   }
 }
 
 .challenge-summary-card {
   background-color: $base-background-color;
   margin-bottom: $base-line-height * 1em;
+  height: 100%;
 
   @include span-columns(12);
 
   .challenge-thumbnail {
-    @include span-columns(3);
-    img {
-      // @include fill-parent();
-    }
+    @include span-columns($challenge_thumbnail_columns);
   }
 
   .challenge-content {
     @include span-columns($challenge_content_columns);
+    margin-top: $base-line-height * 1em;
 
     h3 {
       font-size: $base-font-size * 1.5;
-      font-weight: lighter;
+      font-weight: 200;
+      margin-bottom: 5px;
     }
 
     h4 {
       color: $cartoon-green;
       font-size: $base-font-size;
-      font-weight: lighter;
+      font-weight: 200;
+      margin-bottom: 3em;
     }
 
     .info-bit {
       @include span-columns($challenge_content_columns / 2);
 
-      h4 { font-weight: lighter; }
-      h5 { font-weight: bolder; }
+      p { font-weight: 200; }
+      h1 {
+        font-size: $base-font-size * 2;
+        font-weight: bolder;
+      }
 
     }
   }
 
   .challenge-decorators {
-    @include span-columns(2);
+    @include span-columns($challenge_decorator_columns);
+    text-transform: uppercase;
+
+    p#challenge-badge {
+      background-color: $cartoon-green;
+      color: white;
+      padding: 0.5em;
+      text-align: center;
+      font-size: $base-font-size;
+      margin-bottom: 7em;
+    }
+
+    p#due-date {
+      color: $cartoon-red;
+      font-weight: bold;
+    }
   }
 }

@@ -3,3 +3,15 @@
   - (1..2).each do
     = partial "challenge_summary_card"
   = link_to "Ver más retos", "#"
+
+%section.challenge-wrapper
+  %h2 Retos recientes
+  - (1..2).each do
+    = partial "challenge_summary_card"
+  = link_to "Ver más retos", "#"
+
+%section.challenge-wrapper
+  %h2 Ganadores y finalistas recientes
+  - (1..8).each do
+    = partial "challenge_summary_card"
+  = link_to "Ver más retos", "#"
