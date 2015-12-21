@@ -1,3 +1,20 @@
+@mixin link($link-color) {
+  color: $link-color;
+  text-decoration: none;
+  transition: color 0.1s linear;
+
+  &:active,
+  &:focus,
+  &:hover {
+    color: darken($link-color, 15%);
+  }
+
+  &:active,
+  &:focus {
+    outline: none;
+  }
+}
+
 body {
   @include font-feature-settings("kern", "liga", "pnum");
   -webkit-font-smoothing: antialiased;
@@ -24,20 +41,7 @@ p {
 }
 
 a {
-  color: $action-color;
-  text-decoration: none;
-  transition: color 0.1s linear;
-
-  &:active,
-  &:focus,
-  &:hover {
-    color: darken($action-color, 15%);
-  }
-
-  &:active,
-  &:focus {
-    outline: none;
-  }
+  @include link($action-color);
 }
 
 hr {

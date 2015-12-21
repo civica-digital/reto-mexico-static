@@ -1,0 +1,75 @@
+.footer {
+  $base-spacing: 1.5em !default;
+  // $action-color: $cartoon-gray !default;
+  $medium-screen: em(640) !default;
+  $large-screen: em(860) !default;
+  $footer-background: $cartoon-gray !default;
+  $footer-color: white;
+  $footer-link-color: transparentize($footer-color, 0.6);
+  $footer-disclaimer-color: transparentize($footer-color, 0.6);
+
+  background: $footer-background;
+  padding: ($base-spacing * 2) $gutter;
+  width: 100%;
+
+  img {
+    height: 3em;
+  }
+
+  @include outer-container(100%);
+
+  .footer-logo {
+    @include span-columns(7);
+    margin-bottom: 2em;
+    text-align: center;
+  }
+
+  .footer-links {
+    @include span-columns(5);
+
+    margin-bottom: $base-spacing;
+  }
+
+  li {
+    line-height: 1.5em;
+    list-style: none;
+  }
+
+  li a {
+    color: $footer-link-color;
+    text-decoration: none;
+
+    &:focus,
+    &:hover {
+      color: transparentize($footer-color, 0);
+    }
+  }
+
+  li h3 {
+    color: $footer-color;
+    font-size: 1em;
+    margin-bottom: 0.4em;
+  }
+
+  .footer-disclaimer{
+    text-align: center;
+   }
+}
+
+footer.footnotes{
+  .terms {
+    @include span-columns(7);
+    text-align: center;
+    // & > a{
+    //   color: $cartoon-green;
+    // }
+  }
+
+  .faq {
+    @include span-columns(5);
+
+    & > a {
+      @include link(white);
+    }
+  }
+}
