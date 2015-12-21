@@ -12,6 +12,7 @@
 
 %section.challenge-wrapper
   %h2 Ganadores y finalistas recientes
-  - (1..8).each do
-    = partial "challenge_summary_card"
+  .cards
+    - (1..8).each do
+      = partial "card"
   = link_to "Ver más retos", "#"
