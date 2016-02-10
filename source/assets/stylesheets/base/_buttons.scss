@@ -1,5 +1,5 @@
 #{$all-button-inputs},
-button {
+button, a.action-link {
   appearance: none;
   -webkit-font-smoothing: antialiased;
   background-color: $action-color;
@@ -10,7 +10,7 @@ button {
   display: inline-block;
   font-family: $base-font-family;
   font-size: $base-font-size;
-  font-weight: 600;
+  font-weight: 500;
   line-height: 1;
   padding: 0.75em 1em;
   text-decoration: none;
@@ -21,12 +21,16 @@ button {
 
   &:hover,
   &:focus {
-    background-color: darken($action-color, 15%);
+    background-color: darken($action-color, 5%);
     color: #fff;
   }
 
   &:disabled {
     cursor: not-allowed;
     opacity: 0.5;
+  }
+
+  &.small{
+    padding: 0.5em 0.75em; font-size: 13px; font-weight: 600;
   }
 }

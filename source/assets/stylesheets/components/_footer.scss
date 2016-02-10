@@ -1,75 +1,47 @@
 .footer {
-  $base-spacing: 1.5em !default;
-  // $action-color: $cartoon-gray !default;
-  $medium-screen: em(640) !default;
-  $large-screen: em(860) !default;
   $footer-background: $cartoon-gray !default;
   $footer-color: white;
-  $footer-link-color: transparentize($footer-color, 0.6);
-  $footer-disclaimer-color: transparentize($footer-color, 0.6);
 
   background: $footer-background;
-  padding: ($base-spacing * 2) $gutter;
-  width: 100%;
+  padding-top:50px;
 
-  img {
-    height: 3em;
-  }
-
-  @include outer-container(100%);
-
-  .footer-logo {
-    @include span-columns(7);
-    margin-bottom: 2em;
-    text-align: center;
-  }
-
-  .footer-links {
-    @include span-columns(5);
-
-    margin-bottom: $base-spacing;
-  }
-
-  li {
-    line-height: 1.5em;
-    list-style: none;
-  }
-
-  li a {
-    color: $footer-link-color;
-    text-decoration: none;
-
-    &:focus,
-    &:hover {
-      color: transparentize($footer-color, 0);
+  .footer-wrapper {
+    @include clearfix; @include outer-container;
+    .row{
+      @include clearfix;
     }
-  }
-
-  li h3 {
-    color: $footer-color;
-    font-size: 1em;
-    margin-bottom: 0.4em;
-  }
-
-  .footer-disclaimer{
-    text-align: center;
-   }
-}
-
-footer.footnotes{
-  .terms {
-    @include span-columns(7);
-    text-align: center;
-    // & > a{
-    //   color: $cartoon-green;
-    // }
-  }
-
-  .faq {
-    @include span-columns(5);
-
-    & > a {
-      @include link(white);
+    .footer-logos {
+      @include span-columns(8); margin-bottom: 2em;
+      img{height: 87px;}
+    }
+    .footer-contact {
+      h4{color:white; font-size: 14px;}
+      p{font-size: 14px;}
+      a{color:$light-gray;
+        &:hover{color:white}
+      }
+      @include span-columns(4); margin-bottom: $base-spacing;
+      ul.social{
+        margin-top:20px;
+        li{
+          display: inline-block; margin-right: 5px;
+          img{width: 32px;}
+        }
+      }
+    }
+    .footer-nav{
+      padding:40px 0;
+      ul{
+        li{
+          display: inline-block; font-weight: bold; color:white; font-size: 14px;
+          a{color:$light-gray; padding: 10px;
+            &:hover{color:white;}
+          }
+          &:after{content: '|'}
+          &:last-child:after{content: '';}
+        }
+      }
     }
   }
 }
+

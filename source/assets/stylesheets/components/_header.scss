@@ -20,7 +20,6 @@ header.navigation {
   $horizontal-bar-mode: $large-screen;
 
   background-color: $navigation-background;
-  border-bottom: 1px solid darken($navigation-background, 10);
   min-height: $navigation-height;
   width: 100%;
   z-index: 999;
@@ -53,6 +52,7 @@ header.navigation {
     line-height: $navigation-height;
     margin: 0;
     padding-right: 1em;
+    width: 34px;
     text-decoration: none;
     text-transform: uppercase;
 
@@ -69,12 +69,11 @@ header.navigation {
   // Nav menu
 
   nav {
-    float: none;
     min-height: $navigation-height;
     z-index: 9999999;
 
     @include media ($horizontal-bar-mode) {
-      float: left;
+      float: right;
     }
   }
 
@@ -122,6 +121,8 @@ header.navigation {
       color: $navigation-color;
       display: inline-block;
       text-decoration: none;
+      font-weight: 600;
+      font-size: 15px;
 
       @include media ($horizontal-bar-mode) {
         padding-right: 1em;
@@ -257,16 +258,8 @@ header.navigation {
   // Elements on the far right
 
   .navigation-tools {
-    background: #505050;
-    clear: both;
-    display: block;
-    height: $navigation-height;
-
-    @include media($horizontal-bar-mode) {
-      background: transparent;
-      clear: none;
-      float: right;
-    }
+    float: right;
+    margin: 1em;
   }
 
   // Search bar
