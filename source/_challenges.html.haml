@@ -6,13 +6,13 @@
 
 %section.challenge-wrapper
   %h2 Retos recientes
-  - (1..3).each do
+  - 3.times do
     = partial "challenge_summary_card"
   = link_to "Ver más retos", "#"
 
 %section.challenge-wrapper
   %h2 Ganadores y finalistas recientes
   .cards
-    - (1..8).each do
+    - 8.times do
       = partial "card"
   = link_to "Ver más retos", "#"
