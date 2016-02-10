@@ -1,0 +1,19 @@
+%footer.footer
+  .footer-wrapper
+    .row
+      .footer-logos
+        = image_tag 'logos/presidencia.png'
+        = image_tag 'logos/se.png'
+      .footer-contact
+        %h4 Contacto
+        %p=link_to 'info@retomexico.org', 'javascript:void(0)'
+        %ul.social
+          %li=link_to image_tag('icons/twitter.png'), 'javascript:void(0)'
+          %li=link_to image_tag('icons/facebook.png'), 'javascript:void(0)'
+          %li=link_to image_tag('icons/google.png'), 'javascript:void(0)'
+    .row
+      .footer-nav
+        %ul
+          %li=link_to 'Preguntas frecuentes', 'javascript:void(0)'
+          %li=link_to 'Términos y condiciones', 'javascript:void(0)'
+          %li=link_to 'Aviso de privacidad', 'javascript:void(0)'
