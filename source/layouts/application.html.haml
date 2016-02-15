@@ -6,9 +6,34 @@
     %meta{name: "viewport", content: "width=device-width, initial-scale=1"}
     %title= current_page.data.title || "The Middleman"
     = stylesheet_link_tag "application"
+    = javascript_include_tag "https://cdn.jsdelivr.net/riot/2.3/riot+compiler.min.js", "application"
+    = javascript_include_tag "https://code.jquery.com/jquery-2.1.1.min.js", "application"
+    = javascript_include_tag "application"
 
   %body{class: page_classes}
     = partial "header"
     = yield
-    = javascript_include_tag "https://code.jquery.com/jquery-2.1.1.min.js", "application"
     = partial "footer"
+    :javascript
+      riot.mount('challenges', {
+        data: [
+          {
+            title: 'Reto Certificación en Línea',
+            organizationName: 'SEP',
+            organizationType: 'Organismo público',
+            status: 'Abierto',
+            numberOfCollaborators: '28',
+            closesOn: 'CIERRA NOV 13',
+            imageUrl: "https://retos-publicos.s3.amazonaws.com/uploads/project_avatar/17/RETO_REVALIDA-01_certificacion.png"
+          },
+          {
+            title: 'Reto Certificación en Línea',
+            organizationName: 'SEP',
+            organizationType: 'Organismo público',
+            status: 'Abierto',
+            numberOfCollaborators: '28',
+            closesOn: 'CIERRA NOV 13',
+            imageUrl: "https://retos-publicos.s3.amazonaws.com/uploads/project_avatar/17/RETO_REVALIDA-01_certificacion.png"
+          },
+        ]
+      })

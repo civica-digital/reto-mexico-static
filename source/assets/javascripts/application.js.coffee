@@ -1,6 +1,6 @@
 //= require_tree .
 
-(document).ready ->
+$(document).ready ->
   $('dropdown-toggle').dropdown()
   $('.js-chosen').chosen()
   $('.js-datepicker').datepicker(dateFormat: 'yy-mm-dd')
