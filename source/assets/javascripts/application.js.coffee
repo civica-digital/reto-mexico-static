@@ -1,6 +1,12 @@
 //= require_tree .
 
-(document).ready ->
+$(document).ready ->
+  # Mount the challenges component
+  $.get('https://reto-mexico-staging.herokuapp.com' + '/api/v1/challenges.json').done (data) ->
+    riot.mount 'challenges', data: data.challenges
+    return
+
+  # Other stuff...
   $('dropdown-toggle').dropdown()
   $('.js-chosen').chosen()
   $('.js-datepicker').datepicker(dateFormat: 'yy-mm-dd')
