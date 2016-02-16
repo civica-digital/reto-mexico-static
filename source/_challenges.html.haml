@@ -1,19 +1,3 @@
-/ %section.challenge-wrapper
-/   %h2 Retos destacados
-/   - (1..2).each do
-/     = partial "challenge_summary_card"
-/   = link_to "Ver más retos", "#"
-
 %section#recent-challenges.challenge-wrapper
-  %challenges
-  -# %h2 Retos recientes
-  -# - 3.times do
-  -#   = partial "challenge_summary_card"
-  -# = link_to "Ver más retos", "#"
-
--# %section.challenge-wrapper
--#   %h2 Ganadores y finalistas recientes
--#   .cards
--#     - 8.times do
--#       = partial "card"
--#   = link_to "Ver más retos", "#"
+  -# Custom Riot.js tag that renders challenges
+  %challenges#challenge_tag__wrapper
