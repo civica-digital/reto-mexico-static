@@ -34,6 +34,7 @@
   .bullet {
     @include flex-basis(20em);
     @include flex-grow(1);
+    transition: all .5s ease;
   }
 
   .bullet-icon {
@@ -65,9 +66,13 @@
   }
 
   img {
-    max-width: 100%;
+    max-width: 90%;
     display: block;
     margin-left: auto;
     margin-right: auto;
+  }
+  .bullet:hover{
+    background-color: #fff;
+    transition: all .5s ease;
   }
 }

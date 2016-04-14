@@ -1,16 +1,41 @@
-.challenge-summary-card
-  .challenge-thumbnail{style: 'background-image: url("https://retos-publicos.s3.amazonaws.com/uploads/project_avatar/17/RETO_REVALIDA-01_certificacion.png")'}
-  .challenge-content
-    %h3 Reto Certificación en L&iacute;nea
-    %h4 SEP
-    .info-bit-container
-      .info-bit
-        %p Etapa 1 de 6
-        %h3 IDEAS
-      .info-bit
-        %p Participantes
-        %h3 28
+/ .challenge-summary-card
+/   .challenge-thumbnail{style: 'background-image: url("https://retos-publicos.s3.amazonaws.com/uploads/project_avatar/17/RETO_REVALIDA-01_certificacion.png")'}
+/   .challenge-content
+/     %h3 Reto Certificación en L&iacute;nea
+/     %h4 SEP
+/     .info-bit-container
+/       .info-bit
+/         %p Etapa 1 de 6
+/         %h3 IDEAS
+/       .info-bit
+/         %p Participantes
+/         %h3 28
 
-  .challenge-decorators
-    %p#challenge-badge Organismo público
-    %p#due-date Cierra Nov 13
+/   .challenge-decorators
+/     %p#challenge-badge Organismo público
+/     %p#due-date Cierra Nov 13
+
+
+.challenge-card
+  .challenge-card-head{style: "background-image: url('#{challenge.avatar}');"}
+    = link_to '#' do
+      .challenge-card-type
+        Organismo empresarial
+
+  .challenge-card-body
+    = link_to "#" do
+      %h5.challenge-card-title
+        Reto Certificación en Línea
+
+    %ul.challenge-card-metadata
+      %li
+        %p= link_to "#" do
+          Challenge Organization
+      %li
+        %p
+          Etapa 1 de 3
+          %span Abierto
+
+  .challenge-card-footer
+    %span.challenge-card-collaborators-number
+      3 participantes
