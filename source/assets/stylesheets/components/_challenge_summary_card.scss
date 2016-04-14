@@ -1,5 +1,12 @@
+.challenge-wrapper{
+@include outer-container;
+margin-bottom: 30px;
+}
 .challenge-card {
+  @include span-columns(4);
+  @include omega(3n);
   background: $base-background-color;
+  margin-bottom: 24px;
 
   .challenge-card-head {
     position: relative;
