@@ -5,6 +5,8 @@ source "http://rubygems.org"
 gem "middleman", "3.4.1"
 gem "middleman-autoprefixer"
 gem "middleman-deploy"
+gem 'middleman-s3_sync'
 gem "middleman-livereload"
 gem "bourbon"
 gem "neat"
+
