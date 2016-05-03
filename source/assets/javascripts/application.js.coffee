@@ -2,7 +2,7 @@
 
 $(document).ready ->
   # Mount the challenges component
-  $.get('https://reto-mexico-staging.herokuapp.com' + '/api/v1/challenges.json').done (data) ->
+  $.get('http://reto-mexico-staging.herokuapp.com' + '/api/v1/challenges.json').done (data) ->
     riot.mount 'challenges', data: data.challenges
     return
 
