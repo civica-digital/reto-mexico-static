@@ -60,6 +60,13 @@ Deploy to Github Pages
 middleman deploy
 ```
 
+Deploy to Amazon s3 Pages
+```
+middleman build
+middleman s3_sync
+```
+
+
 Or install the [Proteus gem](https://github.com/thoughtbot/proteus) and enjoy some shortcuts.
 
 ## Directories
