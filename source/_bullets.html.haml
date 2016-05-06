@@ -11,17 +11,17 @@
       %p Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas scelerisque venenatis ultrices.
 %ul.bullets
   %li.bullet
-    =link_to '#' do
+    =link_to "#{config[:host]}/retos" do
       = image_tag("icons/phone.png")
       .bullet-content
       %h2 Participa<br>en un reto
   %li.bullet
-    =link_to '#' do
-      = image_tag("icons/trophy.png")
+    =link_to "#{config[:host]}/retadores" do
+      = image_tag("icons/challengers.png")
       .bullet-content
-      %h2 Conoce a los<br>ganadores
+      %h2 Conoce a los<br>retadores
   %li.bullet
-    =link_to '#' do
-      = image_tag("icons/spaceship.png")
+    =link_to "#{config[:host]}/acerca" do
+      = image_tag("icons/about.png")
       .bullet-content
-      %h2 Lanza<br>un reto
+      %h2 ¿Cómo funciona<br>Reto México?
