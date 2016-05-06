@@ -33,6 +33,7 @@ activate :deploy do |deploy|
 end
 
 activate :s3_sync do |s3_sync|
+  config[:host] = "http://#{env_vars['HOST_AQUILA']}"
   s3_sync.bucket                     = env_vars['AWS_BUCKET'] # The name of the S3 bucket you are targeting. This is globally unique.
   s3_sync.region                     = 'us-east-1'     # The AWS region for your bucket.
   s3_sync.aws_access_key_id          = env_vars['AWS_ACCESS_KEY_ID']

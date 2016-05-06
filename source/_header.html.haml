@@ -3,12 +3,12 @@
     =link_to image_tag('logo.png'), 'javascript:void(0)', class: 'logo'
     =link_to image_tag('icons/menu.png'), 'javascript:void(0)', class: 'navigation-menu-button', id: 'js-mobile-menu'
     .navigation-tools
-      =link_to 'INGRESAR', "http://reto-mexico-staging.herokuapp.com/usuarios/ingresa", class: 'action-link small'
+      =link_to 'INGRESAR', "#{config[:host]}/usuarios/ingresa", class: 'action-link small'
     %nav.navigation
       %ul#js-navigation-menu.navigation-menu.show
         -# %li.nav-link=link_to 'Participa', 'http://reto-mexico-staging.herokuapp.com/'
         -# %li.nav-link=link_to 'Lanza un reto', 'http://reto-mexico-staging.herokuapp.com/'
-        %li.nav-link=link_to 'Retos', 'http://reto-mexico-staging.herokuapp.com/'
-        %li.nav-link=link_to 'Retadores', 'http://reto-mexico-staging.herokuapp.com/organizaciones'
+        %li.nav-link=link_to 'Retos', "#{config[:host]}"
+        %li.nav-link=link_to 'Retadores', "#{config[:host]}/organizaciones"
         -# %li.nav-link=link_to 'Participantes', 'http://reto-mexico-staging.herokuapp.com/'
-        %li.nav-link=link_to 'Acerca', 'http://reto-mexico-staging.herokuapp.com/acerca'
+        %li.nav-link=link_to 'Acerca', "#{config[:host]}/acerca"
