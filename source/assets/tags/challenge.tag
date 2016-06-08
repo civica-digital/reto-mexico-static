@@ -44,7 +44,7 @@
         organizationType: _challenge.organization_type || 'Público',
         closesOn: 'Cierra ' + _challenge.finish_on,
         status: (_challenge.status === 'open' && 'Abierto') || (_challenge.status === 'closed' && 'Cerrado') || 'N/D',
-        avatarStyle: "background-image: url("  + (_challenge.avatar_url || 'https://retos-publicos.s3.amazonaws.com/uploads/project_avatar/17/RETO_REVALIDA-01_certificacion.png') +   ")",
+        avatarStyle: "background-image: url("  + (_challenge.image_url || 'https://retos-publicos.s3.amazonaws.com/uploads/project_avatar/17/RETO_REVALIDA-01_certificacion.png') +   ")",
         numberOfCollaborators: _challenge.number_of_collaborators || 'N/D',
         challengeUrl: _challenge.challenge_url || '#',
         currentPhaseNumber: _challenge.current_phase_number,
