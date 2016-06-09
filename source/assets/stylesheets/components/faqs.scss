@@ -9,20 +9,20 @@
 
   .accordion {
       > ul > li{
-      padding: 15px 0;
       border-bottom: 1px solid #ededed;
       font-weight: bold;
       font-size: 14px;
       a{
         color: #333;
         display: block;
+        padding: 15px 0;
       }
     }
 
     .content {
       display: none;
       font-weight: normal;
-      padding: 15px;
+      padding: 15px 0;
 
       ul li{
         list-style: circle;
@@ -30,6 +30,7 @@
       }
       ol li{
         list-style: decimal;
+        margin-left: 20px;
       }
 
       ol + h4,
