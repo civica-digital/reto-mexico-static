@@ -2,7 +2,7 @@
 
 $(document).ready ->
   # Mount the challenges component
-  $.get('http://app-staging.retomexico.org.mx' + '/api/v1/challenges.json?status=public').done (data) ->
+  $.get("http://app.retomexico.org.mx" + '/api/v1/challenges.json?status=public').done (data) ->
     riot.mount 'challenges', data: data.challenges
     return
 
