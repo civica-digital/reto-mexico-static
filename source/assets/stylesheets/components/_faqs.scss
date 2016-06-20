@@ -1,0 +1,51 @@
+.faqs{
+  .container{
+    padding: 60px 100px;
+  }
+  h1{
+    color: $cartoon-green;
+    font-size: 24px;
+  }
+
+  .accordion {
+      > ul > li{
+      border-bottom: 1px solid #ededed;
+      font-weight: bold;
+      font-size: 14px;
+      a{
+        color: #333;
+        display: block;
+        padding: 15px 0;
+      }
+    }
+
+    .content {
+      display: none;
+      font-weight: normal;
+      padding: 15px 0;
+
+      ul li{
+        list-style: circle;
+        margin-left: 15px;
+      }
+      ol li{
+        list-style: decimal;
+        margin-left: 20px;
+      }
+
+      ol + h4,
+      ul + h4{
+        padding-top: 20px;
+      }
+    }
+
+    .is-expanded {
+      > a {
+        color: $cartoon-green;
+      }
+
+      display: block;
+    }
+  }
+
+}
