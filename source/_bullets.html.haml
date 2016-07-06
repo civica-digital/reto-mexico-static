@@ -1,27 +1,30 @@
 .features
-  %ul.features-container
-    %li.feature
-      %h3 ¿Qué es un reto?
-      %p Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas scelerisque venenatis ultrices.
-    %li.feature
-      %h3 ¿Quién puede participar?
-      %p Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas scelerisque venenatis ultrices.
-    %li.feature
-      %h3 ¿Quién puede lanzar un reto?
-      %p Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas scelerisque venenatis ultrices.
-%ul.bullets
-  %li.bullet
-    =link_to "#{config[:host]}/retos" do
-      = image_tag("icons/phone.png")
-      .bullet-content
-      %h2 Participa<br>en un reto
-  %li.bullet
-    =link_to "#{config[:host]}/retadores" do
-      = image_tag("icons/challengers.png")
-      .bullet-content
-      %h2 Conoce a los<br>retadores
-  %li.bullet
-    =link_to "#{config[:host]}/acerca" do
-      = image_tag("icons/about.png")
-      .bullet-content
-      %h2 ¿Cómo funciona<br>Reto México?
+  .container
+    %ul.features-container
+      %li.feature
+        %h3 ¿Qué es un reto?
+        %p Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas scelerisque venenatis ultrices.
+      %li.feature
+        %h3 ¿Quién puede participar?
+        %p Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas scelerisque venenatis ultrices.
+      %li.feature
+        %h3 ¿Quién puede lanzar un reto?
+        %p Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas scelerisque venenatis ultrices.
+.icons
+  .container
+    %ul.bullets
+      %li.bullet
+        =link_to "#{config[:host]}/retos" do
+          = image_tag("icons/phone.png")
+          .bullet-content
+          %h2 Participa<br>en un reto
+      %li.bullet
+        =link_to "#{config[:host]}/retadores" do
+          = image_tag("icons/challengers.png")
+          .bullet-content
+          %h2 Conoce a los<br>retadores
+      %li.bullet
+        =link_to "#{config[:host]}/acerca" do
+          = image_tag("icons/about.png")
+          .bullet-content
+          %h2 ¿Cómo funciona<br>Reto México?

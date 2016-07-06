@@ -11,7 +11,8 @@
       @include clearfix;
     }
     .footer-logos {
-      @include span-columns(8); margin-bottom: 2em;
+      @include span-columns(8); 
+      margin-bottom: 2em;
       img{height: 87px;}
     }
     .footer-contact {
@@ -20,7 +21,8 @@
       a{color:$light-gray;
         &:hover{color:white}
       }
-      @include span-columns(4); margin-bottom: $base-spacing;
+      @include span-columns(4); 
+      margin-bottom: $base-spacing;
       ul.social{
         margin-top:20px;
         li{
@@ -29,6 +31,7 @@
         }
       }
     }
+
     .footer-nav{
       padding:40px 0;
       ul{
@@ -40,6 +43,12 @@
           &:after{content: '|'}
           &:last-child:after{content: '';}
         }
+      }
+    }
+
+    @media (max-width: 680px) {
+      .footer-logos,  .footer-contact{
+        width:100%;
       }
     }
   }
