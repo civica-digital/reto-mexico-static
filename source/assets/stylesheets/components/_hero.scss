@@ -25,15 +25,17 @@
     @include outer-container;
     position: relative;
     z-index: 9999;
+    min-height: 25em;
   }
 
   .device-text {
-    padding: 1em;
+    position: absolute;
+    top:50%;
+    transform: translate(0, -50%);
+    width: 50%;
 
-    @include media($large-screen) {
-      float: left;
-      max-width: 50%;
-      padding-top: 4em;
+    @include media(max-width 859px) {
+      width:100%;
     }
 
     h4 {
@@ -54,5 +56,8 @@
 
   .device {
     right:0; max-width: 50%; position: absolute; top:40px;
+    @include media(max-width 859px) {
+      display:none;
+    }
   }
 }
