@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset='utf-8'>
+    <meta content='IE=edge,chrome=1' http-equiv='X-UA-Compatible'>
+    <meta content='width=device-width, initial-scale=1' name='viewport'>
+    <title>Reto México</title>
+    <link href="assets/stylesheets/application.css" rel="stylesheet" />
+    <script src="https://cdn.jsdelivr.net/riot/2.3/riot+compiler.min.js"></script>
+    <script src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
+    <script src='assets/tags/challenge.tag' type='riot/tag'></script>
+    <script src="assets/javascripts/application.js"></script>
+  </head>
+  <body class='index'>
+    <header class='navigation'>
+      <div class='navigation-wrapper'>
+        <a class="logo" href="javascript:void(0)"><img src="assets/images/logo.png" /></a>
+        <a class="navigation-menu-button" id="js-mobile-menu" href="javascript:void(0)"><img src="assets/images/icons/menu.png" /></a>
+        <div class='navigation-tools'>
+          <a class="action-link small" href="app.retomexico.org.mx/usuarios/ingresa">INGRESAR</a>
+        </div>
+        <nav class='navigation'>
+          <ul class='navigation-menu show' id='js-navigation-menu'>
+            <li class='nav-link'><a href="app.retomexico.org.mx">Retos</a></li>
+            <li class='nav-link'><a href="app.retomexico.org.mx/retadores">Retadores</a></li>
+            <li class='nav-link'><a href="app.retomexico.org.mx/participantes">Participantes</a></li>
+            <li class='nav-link'><a href="app.retomexico.org.mx/acerca">Acerca</a></li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+    <div class='device-background'>
+      <div class='container'>
+        <div class='text-wrapper'>
+          <div class='device-text'>
+            <h4>Reto México</h4>
+            <p>
+              El primer premio de estímulo a nivel nacional busca resolver
+              problemas específicos, promoviendo una competencia abierta para
+              fomentar la innovación.
+            </p>
+            <button name='button' type='button'>
+              Participa
+            </button>
+          </div>
+          <div class='device'>
+            <img src="assets/images/icons/banner-icon.png" />
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class='features'>
+      <div class='container'>
+        <ul class='features-container'>
+          <li class='feature'>
+            <h3>¿Qué es un reto?</h3>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas scelerisque venenatis ultrices.</p>
+          </li>
+          <li class='feature'>
+            <h3>¿Quién puede participar?</h3>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas scelerisque venenatis ultrices.</p>
+          </li>
+          <li class='feature'>
+            <h3>¿Quién puede lanzar un reto?</h3>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas scelerisque venenatis ultrices.</p>
+          </li>
+        </ul>
+      </div>
+    </div>
+    <div class='icons'>
+      <div class='container'>
+        <ul class='bullets'>
+          <li class='bullet'>
+            <a href="app.retomexico.org.mx/retos"><img src="assets/images/icons/phone.png" />
+            <div class='bullet-content'></div>
+            <h2>Participa<br>en un reto</h2>
+            </a>
+          </li>
+          <li class='bullet'>
+            <a href="app.retomexico.org.mx/retadores"><img src="assets/images/icons/challengers.png" />
+            <div class='bullet-content'></div>
+            <h2>Conoce a los<br>retadores</h2>
+            </a>
+          </li>
+          <li class='bullet'>
+            <a href="app.retomexico.org.mx/acerca"><img src="assets/images/icons/about.png" />
+            <div class='bullet-content'></div>
+            <h2>¿Cómo funciona<br>Reto México?</h2>
+            </a>
+          </li>
+        </ul>
+      </div>
+    </div>
+    <section class='challenge-wrapper' id='recent-challenges'>
+      <div class='container'>
+        <challenges id='challenge_tag__wrapper'></challenges>
+      </div>
+    </section>
+    <footer class='footer'>
+      <div class='footer-wrapper container'>
+        <div class='row'>
+          <div class='footer-logos'>
+            <img src="assets/images/logos/presidencia.png" />
+            <img src="assets/images/logos/se.png" />
+          </div>
+          <div class='footer-contact'>
+            <h4>Contacto</h4>
+            <p><a href="javascript:void(0)">info@retomexico.org</a></p>
+            <ul class='social'>
+              <li><a href="javascript:void(0)"><img src="assets/images/icons/twitter.png" /></a></li>
+              <li><a href="javascript:void(0)"><img src="assets/images/icons/facebook.png" /></a></li>
+              <li><a href="javascript:void(0)"><img src="assets/images/icons/google.png" /></a></li>
+            </ul>
+          </div>
+        </div>
+        <div class='row'>
+          <div class='footer-nav'>
+            <ul>
+              <li><a href="javascript:void(0)">Preguntas frecuentes</a></li>
+              <li><a href="javascript:void(0)">Términos y condiciones</a></li>
+              <li><a href="javascript:void(0)">Aviso de privacidad</a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>
