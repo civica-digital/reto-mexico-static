@@ -7,7 +7,7 @@
           El primer premio de estímulo a nivel nacional busca resolver
           problemas específicos, promoviendo una competencia abierta para
           fomentar la innovación.
-        %button{type: 'button', name: 'button'}
-          Participa
+        %form{action: "#{config[:host]}"}
+          %input{type: :submit, value: "Participa"}
       .device
         = image_tag 'icons/banner-icon.png'
