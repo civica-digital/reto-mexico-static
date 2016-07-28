@@ -26,6 +26,12 @@
             <span>{ currentPhaseName }</span>
           </p>
         </li>
+        <li>
+          <p>
+            Inició:
+            <span>{ startsOn }</span>
+          </p>
+        </li>
       </ul>
     </div>
 
@@ -43,6 +49,7 @@
         organizationName: _challenge.organization_name || 'Reto México',
         organizationType: _challenge.organization_type || 'Público',
         closesOn: 'Cierra ' + _challenge.finish_on,
+        startsOn:  _challenge.starts_at,
         status: (_challenge.status === 'open' && 'Abierto') || (_challenge.status === 'closed' && 'Cerrado') || 'N/D',
         avatarStyle: "background-image: url("  + (_challenge.image_url || 'https://retos-publicos.s3.amazonaws.com/uploads/project_avatar/17/RETO_REVALIDA-01_certificacion.png') +   ")",
         numberOfCollaborators: _challenge.number_of_collaborators || 'N/D',
